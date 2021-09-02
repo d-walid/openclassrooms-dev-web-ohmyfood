@@ -3,6 +3,7 @@
 
 @import "./libs/reset.scss";
 @import "./libs/variables.scss";
+@import "./libs/responsive.scss";
 
 p,
 h3 {
@@ -35,9 +36,67 @@ h3 {
 }
 
 /* FUNCTIONING */
-.choose-restaurant {
+
+.title-functioning {
+  text-align: center;
+}
+
+.steps-functioning {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+.steps-functioning li {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 15px 20px 20px 30px;
+  border-radius: 20px;
+  box-shadow: 1px 2px 8px 2px #c4c4c4;
+}
+
+.step-functioning-number {
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  background-color: $primary-color;
+  color: white;
+  margin-left: -15px;
+}
+
+.step-icon {
+  color: grey;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.steps-functioning li p {
+  font-weight: 600;
+  width: 300px;
+}
+
+/* min-width: 320px */
+@media #{$small-custom} {
+}
+
+/* min-width: 480px */
+@media #{$small-down} {
+}
+
+/* min-width: 768px */
+@media #{$small-up} {
+}
+
+/* min-width: 992px */
+@media #{$medium-up} {
+}
+
+/* min-width: 1200px */
+@media #{$large-up} {
 }
