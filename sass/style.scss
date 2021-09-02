@@ -19,18 +19,48 @@ h3 {
 /* LOCALISATION */
 .localisation {
   background-color: $grey-color;
+  text-align: center;
+}
+
+.desc-localisation {
   display: flex;
   justify-content: center;
+  align-items: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
-.localisation p {
-  padding-left: 10px;
-}
-
-/* EXPLORATION */
-.explore {
-  text-align: center;
-  background-color: $lightgrey-color;
+.desc-localisation i {
+  padding-right: 15px;
 }
 
 /* FUNCTIONING */
+.desc-shadow {
+  padding-left: 10px;
+  margin-bottom: 20px;
+  display: inline-flex;
+  align-items: center;
+  height: 60px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px rgba(81, 81, 81, 0.5);
+}
+
+.desc-shadow i {
+  padding-left: 15px;
+  padding-right: 20px;
+}
+
+.desc-shadow p {
+  font-weight: bold;
+}
+
+.btn-step-functioning {
+  margin-left: 10px;
+  background-color: $primary-color;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  height: 25px;
+  width: 25px;
+}
