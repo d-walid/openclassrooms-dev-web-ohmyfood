@@ -1,2 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Shrikhand&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+/* COLORS */
+p,
+h3 {
+  font-family: 'Roboto';
+}
+
+/* HEADER */
+.title-ohmyfood {
+  font-size: 20px;
+  font-family: 'Shrikhand';
+  text-align: center;
+}
+
+/* LOCALISATION */
+.localisation {
+  background-color: #eaeaea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.localisation p {
+  padding-left: 10px;
+}
+
+/* EXPLORATION */
+.explore {
+  text-align: center;
+  background-color: #f6f6f6;
+}
+
+/* FUNCTIONING */
