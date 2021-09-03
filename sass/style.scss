@@ -155,6 +155,7 @@ ol {
   }
 
   .desc-localisation button {
+    font-weight: bold;
     border-radius: 30px;
     cursor: pointer;
     height: 40px;
@@ -162,7 +163,13 @@ ol {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    background-color: black;
+    border: none;
+    background: #ff79db;
+    background: -webkit-linear-gradient(bottom right, #ff79db, #af5fdb);
+    background: -moz-linear-gradient(bottom right, #ff79db, #af5fdb);
+    background: linear-gradient(to top left, #ff79db, #af5fdb);
+    -webkit-box-shadow: 4px 4px 6px 0px #aaa;
+    box-shadow: 4px 4px 6px 0px #aaa;
     color: white;
   }
 
