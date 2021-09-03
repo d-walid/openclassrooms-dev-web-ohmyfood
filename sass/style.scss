@@ -1,19 +1,35 @@
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Shrikhand&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Shrikhand&display=swap');
 
-@import "./libs/reset.scss";
-@import "./libs/variables.scss";
-@import "./libs/responsive.scss";
+@import './libs/reset.scss';
+@import './libs/variables.scss';
+@import './libs/responsive.scss';
 
-p,
-h3 {
-  font-family: "Roboto";
+h2,
+h3,
+p {
+  font-family: 'Roboto';
+}
+
+h4,
+h5 {
+  font-family: 'Shrikhand';
+}
+
+ul,
+li,
+ol {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  padding-inline-start: 0;
 }
 
 /* HEADER */
 .title-ohmyfood {
   font-size: 20px;
-  font-family: "Shrikhand";
+  font-family: 'Shrikhand';
   text-align: center;
 }
 
@@ -79,6 +95,22 @@ h3 {
 .steps-functioning li p {
   font-weight: 600;
   width: 300px;
+}
+
+/* FOOTER */
+.footer-container {
+  color: white;
+  background-color: #353535;
+  padding-top: 8px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+
+.footer-list li a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Roboto';
+  line-height: 25px;
 }
 
 /* min-width: 320px */
