@@ -24,8 +24,7 @@ p {
   font-family: 'Roboto';
 }
 
-h4,
-h5 {
+h4 {
   font-family: 'Shrikhand';
 }
 
@@ -38,6 +37,19 @@ ol {
   padding: 0;
   -webkit-padding-start: 0;
           padding-inline-start: 0;
+}
+
+figure,
+h5,
+p {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
 }
 
 /* HEADER */
@@ -159,6 +171,7 @@ ol {
   h5 {
     font-size: 20px;
   }
+  /* LOCALISATION CUSTOM MOBILE */
   .localisation {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -213,6 +226,7 @@ ol {
     box-shadow: 4px 4px 6px 0px #aaa;
     color: white;
   }
+  /* FUNCTIONING CUSTOM MOBILE */
   .title-functioning {
     margin-top: 25px;
     margin-bottom: 10px;
@@ -221,6 +235,7 @@ ol {
   }
   .steps-functioning {
     margin-left: 5px;
+    margin-bottom: 30px;
   }
   .steps-functioning li {
     width: 90%;
@@ -228,6 +243,69 @@ ol {
     margin-right: auto;
     height: 70px;
   }
+  /* RESTAURANTS CUSTOM MOBILE */
+  .restaurants {
+    background-color: #eaeaea;
+  }
+  .restaurants h3 {
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+  }
+  .palette-du-gout {
+    border-radius: 10px;
+    width: 300px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .img-palette-du-gout {
+    background-image: url("../assets/restaurants/palette-du-gout.jpg");
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 150px;
+    width: 300px;
+  }
+  .new-restaurant-button {
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 15px;
+    width: 90px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+    left: 200px;
+    top: 15px;
+    background-color: #99e2d0;
+    color: #2f8f78c7;
+  }
+  figcaption {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+  }
+  .figcaption-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .heart {
+    font-size: 23px;
+    position: relative;
+    right: 25px;
+    top: 5px;
+  }
+  .figcaption-title h5 {
+    font-family: 'Roboto';
+    font-size: 16px;
+  }
+  /* FOOTER CUSTOM MOBILE */
   .footer-container li {
     padding-top: 5px;
     margin-left: 10px;
