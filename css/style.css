@@ -21,11 +21,11 @@ h3 {
 h2,
 h3,
 p {
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 
 h4 {
-  font-family: 'Shrikhand';
+  font-family: "Shrikhand";
 }
 
 ul,
@@ -55,7 +55,7 @@ p {
 /* HEADER */
 .title-ohmyfood {
   font-size: 20px;
-  font-family: 'Shrikhand';
+  font-family: "Shrikhand";
   text-align: center;
 }
 
@@ -154,7 +154,7 @@ p {
 .footer-list li a {
   color: white;
   text-decoration: none;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   line-height: 25px;
 }
 
@@ -205,9 +205,11 @@ p {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 15px;
   }
   .desc-localisation p {
     text-align: center;
+    padding-bottom: 15px;
   }
   .desc-localisation button {
     font-weight: bold;
@@ -252,9 +254,12 @@ p {
     padding-left: 10px;
     padding-bottom: 20px;
   }
-  .palette-du-gout {
+  .palette-du-gout,
+  .note-enchantee,
+  .a-la-francaise,
+  .le-delice-des-sens {
     border-radius: 10px;
-    width: 300px;
+    width: 95%;
     background-color: white;
     margin-left: auto;
     margin-right: auto;
@@ -266,11 +271,38 @@ p {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     height: 150px;
-    width: 300px;
+    width: 100%;
+  }
+  .img-la-note-enchantee {
+    background-image: url("../assets/restaurants/note-enchantee.jpg");
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 150px;
+    width: 100%;
+  }
+  .img-a-la-francaise {
+    background-image: url("../assets/restaurants/a-la-francaise.jpg");
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 150px;
+    width: 100%;
+  }
+  .img-le-delice-des-sens {
+    background-image: url("../assets/restaurants/delice-des-sens.jpg");
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 150px;
+    width: 100%;
   }
   .new-restaurant-button {
     text-align: center;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-weight: bold;
     font-size: 15px;
     width: 90px;
@@ -285,6 +317,7 @@ p {
   figcaption {
     padding-top: 15px;
     padding-bottom: 15px;
+    margin-bottom: 15px;
     padding-left: 10px;
   }
   .figcaption-title {
@@ -302,7 +335,7 @@ p {
     top: 5px;
   }
   .figcaption-title h5 {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-size: 16px;
   }
   /* FOOTER CUSTOM MOBILE */

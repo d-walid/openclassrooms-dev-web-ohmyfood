@@ -1,18 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Shrikhand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Shrikhand&display=swap");
 
-@import './libs/reset.scss';
-@import './libs/variables.scss';
-@import './libs/responsive.scss';
+@import "./libs/reset.scss";
+@import "./libs/variables.scss";
+@import "./libs/cards.scss";
+@import "./libs/responsive.scss";
 
 h2,
 h3,
 p {
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 
 h4 {
-  font-family: 'Shrikhand';
+  font-family: "Shrikhand";
 }
 
 ul,
@@ -37,7 +38,7 @@ p {
 /* HEADER */
 .title-ohmyfood {
   font-size: 20px;
-  font-family: 'Shrikhand';
+  font-family: "Shrikhand";
   text-align: center;
 }
 
@@ -113,7 +114,7 @@ p {
 .footer-list li a {
   color: white;
   text-decoration: none;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   line-height: 25px;
 }
 
@@ -157,10 +158,12 @@ p {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 15px;
   }
 
   .desc-localisation p {
     text-align: center;
+    padding-bottom: 15px;
   }
 
   .desc-localisation button {
@@ -213,27 +216,32 @@ p {
     padding-bottom: 20px;
   }
 
-  .palette-du-gout {
-    border-radius: 10px;
-    width: 300px;
-    background-color: white;
-    margin-left: auto;
-    margin-right: auto;
+  .palette-du-gout,
+  .note-enchantee,
+  .a-la-francaise,
+  .le-delice-des-sens {
+    @include card;
   }
 
   .img-palette-du-gout {
-    background-image: url('../assets/restaurants/palette-du-gout.jpg');
-    background-position: center;
-    background-size: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    height: 150px;
-    width: 300px;
+    @include img-card-palette;
+  }
+
+  .img-la-note-enchantee {
+    @include img-card-note-enchantee;
+  }
+
+  .img-a-la-francaise {
+    @include img-card-francaise;
+  }
+
+  .img-le-delice-des-sens {
+    @include img-card-delice-sens;
   }
 
   .new-restaurant-button {
     text-align: center;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-weight: bold;
     font-size: 15px;
     width: 90px;
@@ -249,6 +257,7 @@ p {
   figcaption {
     padding-top: 15px;
     padding-bottom: 15px;
+    margin-bottom: 15px;
     padding-left: 10px;
   }
 
@@ -265,7 +274,7 @@ p {
   }
 
   .figcaption-title h5 {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-size: 16px;
   }
 
