@@ -209,6 +209,12 @@ p {
     color: white;
   }
 
+  .desc-localisation button:hover {
+    background-color: lighten($color: $primary-color, $amount: 15);
+    background-blend-mode: lighten;
+    box-shadow: 4px 4px 6px 0px #414141;
+  }
+
   /* FUNCTIONING CUSTOM MOBILE */
   .title-functioning {
     margin-top: 25px;
@@ -306,6 +312,11 @@ p {
     top: 5px;
   }
 
+  .heart:hover {
+    font-weight: bold;
+    color: $primary-color;
+  }
+
   .figcaption-title h5 {
     font-family: 'Roboto';
     font-size: 16px;
@@ -321,6 +332,10 @@ p {
     margin-top: 10px;
     margin-left: 10px;
     margin-bottom: 10px;
+  }
+
+  .footer-container li .fa-utensils {
+    padding-right: 10px;
   }
 }
 
