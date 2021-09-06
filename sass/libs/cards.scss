@@ -1,15 +1,19 @@
 @mixin card {
   border-radius: 10px;
-  width: 90%;
+  max-width: 310px;
+  height: 220px;
+  position: relative;
   background-color: white;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
 }
 
-@mixin img-card-palette {
-  background-image: url("../assets/restaurants/palette-du-gout.jpg");
-  background-position: center;
+@mixin img-card-palette-du-gout {
+  background-image: url('../assets/restaurants/palette-du-gout.jpg');
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   height: 150px;
@@ -17,7 +21,7 @@
 }
 
 @mixin img-card-note-enchantee {
-  background-image: url("../assets/restaurants/note-enchantee.jpg");
+  background-image: url('../assets/restaurants/note-enchantee.jpg');
   background-position: center;
   background-size: cover;
   border-top-left-radius: 10px;
@@ -27,7 +31,7 @@
 }
 
 @mixin img-card-francaise {
-  background-image: url("../assets/restaurants/a-la-francaise.jpg");
+  background-image: url('../assets/restaurants/a-la-francaise.jpg');
   background-position: center;
   background-size: cover;
   border-top-left-radius: 10px;
@@ -37,7 +41,7 @@
 }
 
 @mixin img-card-delice-sens {
-  background-image: url("../assets/restaurants/delice-des-sens.jpg");
+  background-image: url('../assets/restaurants/delice-des-sens.jpg');
   background-position: center;
   background-size: cover;
   border-top-left-radius: 10px;
