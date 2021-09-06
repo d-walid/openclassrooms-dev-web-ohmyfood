@@ -21,11 +21,11 @@ h3 {
 h2,
 h3,
 p {
-  font-family: "Roboto";
+  font-family: 'Roboto';
 }
 
 h4 {
-  font-family: "Shrikhand";
+  font-family: 'Shrikhand';
 }
 
 ul,
@@ -68,22 +68,19 @@ p {
 
 /* LOCALISATION */
 .localisation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  -webkit-box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.4);
+          box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.4);
   background-color: #eaeaea;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .localisation i {
   padding-right: 15px;
+}
+
+.desc-localisation {
+  background-color: #f6f6f6;
 }
 
 /* FUNCTIONING */
@@ -158,10 +155,15 @@ p {
   padding-left: 10px;
 }
 
+.footer-container h4 {
+  font-size: 20px;
+  font-weight: 200;
+}
+
 .footer-list li a {
   color: white;
   text-decoration: none;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   line-height: 25px;
 }
 
@@ -191,12 +193,19 @@ p {
             align-items: center;
     width: 100%;
     text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   .localisation i {
     padding-right: 15px;
+    font-size: 13px;
+  }
+  .localisation p {
+    font-size: 13px;
+    font-weight: 500;
   }
   .desc-localisation {
-    background-color: #eaeaea;
+    background-color: #f6f6f6;
     padding-top: 20px;
     width: 100%;
     display: -webkit-box;
@@ -212,25 +221,27 @@ p {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 15px;
     padding-bottom: 15px;
   }
   .desc-localisation p {
     text-align: center;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
+    font-weight: 300;
   }
   .desc-localisation button {
-    font-weight: bold;
+    font-weight: 600;
     border-radius: 30px;
     cursor: pointer;
     height: 40px;
     width: 200px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     border: none;
     background: #ff79db;
-    background: -webkit-gradient(linear, right bottom, left top, from(#ff79db), to(#af5fdb));
-    background: linear-gradient(to top left, #ff79db, #af5fdb);
+    background: -webkit-gradient(linear, right bottom, left top, from(#af5fdb), to(#ff79db));
+    background: linear-gradient(to top left, #af5fdb, #ff79db);
     -webkit-box-shadow: 4px 4px 6px 0px #aaa;
     box-shadow: 4px 4px 6px 0px #aaa;
     color: white;
@@ -251,6 +262,12 @@ p {
     margin-left: auto;
     margin-right: auto;
     height: 70px;
+  }
+  .steps-functioning li:hover {
+    background-color: #f5edff;
+  }
+  .steps-functioning li:hover .step-icon {
+    color: #9356dc;
   }
   /* RESTAURANTS CUSTOM MOBILE */
   .restaurants {
@@ -310,7 +327,7 @@ p {
   }
   .new-restaurant-button {
     text-align: center;
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-weight: bold;
     font-size: 15px;
     width: 90px;
@@ -343,7 +360,7 @@ p {
     top: 5px;
   }
   .figcaption-title h5 {
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-size: 16px;
   }
   /* FOOTER CUSTOM MOBILE */
