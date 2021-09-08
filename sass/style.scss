@@ -12,10 +12,6 @@ p {
   font-family: 'Roboto';
 }
 
-h4 {
-  font-family: 'Shrikhand';
-}
-
 ul,
 li,
 ol,
@@ -42,6 +38,19 @@ p {
 .title-ohmyfood {
   width: 100%;
   height: 50px;
+}
+
+.title-page-ohmyfood h1 {
+  font-family: 'Shrikhand';
+  text-align: center;
+}
+
+.arrow-home {
+  float: left;
+}
+
+.arrow-home {
+  font-size: 25px;
 }
 
 .logo-ohmyfood {
@@ -124,6 +133,7 @@ p {
 }
 
 .footer-container h4 {
+  font-family: 'Shrikhand';
   font-size: 20px;
   font-weight: 200;
 }
@@ -378,9 +388,6 @@ p {
 
 /* min-width: 768px */
 @media #{$small-up} {
-  a {
-    width: auto;
-  }
   .palette-du-gout,
   .note-enchantee,
   .a-la-francaise,
