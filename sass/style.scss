@@ -403,7 +403,9 @@ p {
 
   /* STARTERS CUSTOM MOBILE */
 
-  .starter-title {
+  .starter-title,
+  .dish-title,
+  .dessert-title {
     font-family: 'Roboto';
     font-weight: 300;
     font-size: 14px;
@@ -416,23 +418,53 @@ p {
     margin-bottom: 10px;
   }
 
-  .starter-meals {
-    color: red;
-    border-radius: 5px;
+  .starter-meals,
+  .dish-meals,
+  .dessert-meals {
+    border-radius: 15px;
     background-color: white;
     padding: 10px;
     margin-bottom: 15px;
   }
 
-  .starter-meals h5 {
+  .starter-meals h5,
+  .dish-meals h5,
+  .dessert-meals h5 {
     font-family: 'Roboto';
     margin-bottom: 3px;
     font-size: 15px;
   }
 
-  .starter-meals p {
+  .starter-meals p,
+  .dish-meals p,
+  .dessert-meals p {
     font-family: 'Roboto';
     font-size: 13px;
+  }
+
+  .details-price-meal {
+    display: flex;
+  }
+
+  .menu-palette-du-gout button {
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    height: 40px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    background: #ff79db;
+    background: -webkit-linear-gradient(bottom right, #af5fdb, #ff79db);
+    background: -moz-linear-gradient(bottom right, #af5fdb, #ff79db);
+    background: linear-gradient(to top left, #af5fdb, #ff79db);
+    -webkit-box-shadow: 4px 4px 6px 0px #aaa;
+    box-shadow: 4px 4px 6px 0px #aaa;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
