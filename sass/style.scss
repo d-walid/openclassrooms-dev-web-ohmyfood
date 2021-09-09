@@ -40,19 +40,6 @@ p {
   height: 50px;
 }
 
-.title-page-ohmyfood h1 {
-  font-family: 'Shrikhand';
-  text-align: center;
-}
-
-.arrow-home {
-  float: left;
-}
-
-.arrow-home {
-  font-size: 25px;
-}
-
 .logo-ohmyfood {
   background-image: url('../assets/logo/ohmyfood@2x.svg');
   background-position: center;
@@ -357,6 +344,53 @@ p {
 
   .footer-container li .fa-utensils {
     padding-right: 10px;
+  }
+
+  /* DETAILS MENU PALETTE DU GOUT CUSTOM MOBILE */
+
+  .arrow-home {
+    font-size: 16px;
+    padding: 10px 10px;
+    position: absolute;
+    left: 5%;
+  }
+
+  .title-page-ohmyfood {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .title-page-ohmyfood h1 {
+    font-family: 'Shrikhand';
+    padding-top: 5px;
+  }
+
+  .img-top-palette {
+    background-image: url('../assets/restaurants/palette-du-gout.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    margin-top: 5px;
+  }
+
+  .menu-palette-du-gout h3 {
+    font-family: 'Shrikhand';
+    font-size: 22px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .menu-details-container {
+    background-color: lightgray;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+
+  .title-icon-palette {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 }
 
