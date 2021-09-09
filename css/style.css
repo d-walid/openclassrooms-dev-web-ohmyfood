@@ -454,7 +454,7 @@ p {
     position: relative;
     left: 15%;
   }
-  /* STARTERS CUSTOM MOBILE */
+  /* DETAILS MENU CUSTOM MOBILE */
   .starter-title,
   .dish-title,
   .dessert-title {
@@ -528,6 +528,12 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .menu-palette-du-gout button:hover {
+    background-color: #bc95e9;
+    background-blend-mode: lighten;
+    -webkit-box-shadow: 4px 4px 6px 0px #414141;
+            box-shadow: 4px 4px 6px 0px #414141;
   }
 }
 
