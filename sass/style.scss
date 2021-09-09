@@ -372,7 +372,7 @@ p {
     background-size: cover;
     height: 200px;
     margin-top: 5px;
-    margin-bottom: -30px;
+    margin-bottom: -40px;
   }
 
   .menu-palette-du-gout h3 {
@@ -384,12 +384,12 @@ p {
   }
 
   .menu-details-container {
-    background-color: $lightgrey-color;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     padding-left: 10px;
     padding-right: 10px;
-    height: 940px;
+    height: 1000px;
+    background-color: $lightgrey-color;
   }
 
   .title-icon-palette {
@@ -461,9 +461,11 @@ p {
     cursor: pointer;
     height: 40px;
     width: 200px;
+    border: none;
     margin-left: auto;
     margin-right: auto;
-    border: none;
+    margin-top: 40px;
+    margin-bottom: 40px;
     background: #ff79db;
     background: -webkit-linear-gradient(bottom right, #af5fdb, #ff79db);
     background: -moz-linear-gradient(bottom right, #af5fdb, #ff79db);
@@ -474,8 +476,6 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
   }
 }
 

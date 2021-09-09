@@ -424,7 +424,7 @@ p {
     background-size: cover;
     height: 200px;
     margin-top: 5px;
-    margin-bottom: -30px;
+    margin-bottom: -40px;
   }
   .menu-palette-du-gout h3 {
     font-family: 'Shrikhand';
@@ -434,12 +434,12 @@ p {
     padding-bottom: 25px;
   }
   .menu-details-container {
-    background-color: #f6f6f6;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     padding-left: 10px;
     padding-right: 10px;
-    height: 940px;
+    height: 1000px;
+    background-color: #f6f6f6;
   }
   .title-icon-palette {
     display: -webkit-box;
@@ -508,9 +508,11 @@ p {
     cursor: pointer;
     height: 40px;
     width: 200px;
+    border: none;
     margin-left: auto;
     margin-right: auto;
-    border: none;
+    margin-top: 40px;
+    margin-bottom: 40px;
     background: #ff79db;
     background: -webkit-gradient(linear, right bottom, left top, from(#af5fdb), to(#ff79db));
     background: linear-gradient(to top left, #af5fdb, #ff79db);
@@ -526,8 +528,6 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
   }
 }
 
