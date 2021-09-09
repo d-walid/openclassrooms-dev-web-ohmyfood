@@ -424,27 +424,61 @@ p {
     background-size: cover;
     height: 200px;
     margin-top: 5px;
+    margin-bottom: -30px;
   }
   .menu-palette-du-gout h3 {
     font-family: 'Shrikhand';
     font-size: 22px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    font-weight: 500;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
   .menu-details-container {
-    background-color: lightgray;
+    background-color: #f6f6f6;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+    padding-left: 15px;
   }
   .title-icon-palette {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .title-icon-palette i {
+    font-size: 20px;
+    position: relative;
+    left: 15%;
+  }
+  /* STARTERS CUSTOM MOBILE */
+  .starter-title {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .line-drawing {
+    border-bottom: 3px solid #99e2d0;
+    width: 12%;
+    padding-top: 3px;
+    margin-bottom: 10px;
+  }
+  .starter-meals {
+    color: red;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  .starter-meals h5 {
+    font-family: 'Roboto';
+    margin-bottom: 3px;
+    font-size: 15px;
+  }
+  .starter-meals p {
+    font-family: 'Roboto';
+    font-size: 13px;
   }
 }
 
