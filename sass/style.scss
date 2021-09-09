@@ -387,7 +387,9 @@ p {
     background-color: $lightgrey-color;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    padding-left: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 940px;
   }
 
   .title-icon-palette {
@@ -442,10 +444,6 @@ p {
     font-size: 13px;
   }
 
-  .details-price-meal {
-    display: flex;
-  }
-
   .menu-palette-du-gout button {
     font-weight: 600;
     border-radius: 30px;
@@ -465,6 +463,8 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 }
 

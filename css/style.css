@@ -437,7 +437,9 @@ p {
     background-color: #f6f6f6;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    padding-left: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 940px;
   }
   .title-icon-palette {
     display: -webkit-box;
@@ -487,11 +489,6 @@ p {
     font-family: 'Roboto';
     font-size: 13px;
   }
-  .details-price-meal {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
   .menu-palette-du-gout button {
     font-weight: 600;
     border-radius: 30px;
@@ -516,6 +513,8 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 }
 
