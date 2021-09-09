@@ -461,6 +461,7 @@ p {
     font-family: 'Roboto';
     font-weight: 300;
     font-size: 14px;
+    padding-top: 20px;
   }
   .line-drawing {
     border-bottom: 3px solid #99e2d0;
@@ -482,12 +483,24 @@ p {
     font-family: 'Roboto';
     margin-bottom: 3px;
     font-size: 15px;
+    font-weight: bold;
   }
   .starter-meals p,
   .dish-meals p,
   .dessert-meals p {
     font-family: 'Roboto';
     font-size: 13px;
+  }
+  .details-price-meal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .details-price-meal p:nth-child(2) {
+    font-weight: bold;
   }
   .menu-palette-du-gout button {
     font-weight: 600;
