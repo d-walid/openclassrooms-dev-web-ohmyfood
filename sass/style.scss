@@ -399,11 +399,10 @@ p {
 
   .title-icon-palette i {
     font-size: 20px;
-    position: relative;
-    left: 15%;
+    margin-left: 20%;
   }
 
-  /* DETAILS MENU CUSTOM MOBILE */
+  /* DETAILS CARD MENU CUSTOM MOBILE */
 
   .starter-title,
   .dish-title,
@@ -509,6 +508,12 @@ p {
     color: #2f8f78c7;
     padding: 5px 10px;
   }
+
+  /* DETAILS MENU PALETTE DU GOUT SMALL MOBILE */
+  .title-icon-palette i {
+    font-size: 20px;
+    margin-left: 20%;
+  }
 }
 
 /* min-width: 768px */
@@ -570,5 +575,24 @@ p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+  }
+
+  /* DETAILS MENU CARD LARGE */
+  .menu-details-container {
+    width: 100%;
+    height: 600px;
+  }
+
+  .starters,
+  .dishes,
+  .desserts {
+    display: flex;
+  }
+
+  .starter-meals,
+  .dish-meals,
+  .dessert-meals {
+    width: 30%;
+    margin-right: 40px;
   }
 }
