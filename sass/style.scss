@@ -426,7 +426,7 @@ p {
   .starter-meals,
   .line-drawing {
     @include animation-fadein;
-    animation-duration: 1s;
+    animation-duration: 2s;
   }
 
   .dish-title,
@@ -434,7 +434,7 @@ p {
   .dish-meals,
   .line-drawing {
     @include animation-fadein;
-    animation-duration: 3s;
+    animation-duration: 4s;
   }
 
   .dessert-title,
@@ -442,7 +442,7 @@ p {
   .dessert-meals,
   .line-drawing {
     @include animation-fadein;
-    animation-duration: 5s;
+    animation-duration: 6s;
   }
 
   .starter-meals,
