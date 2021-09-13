@@ -468,6 +468,65 @@ p {
     padding-top: 3px;
     margin-bottom: 10px;
   }
+  .starter-title,
+  .starters,
+  .starter-meals,
+  .line-drawing {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+  }
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .dish-title,
+  .dishes,
+  .dish-meals,
+  .line-drawing {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .dessert-title,
+  .desserts,
+  .dessert-meals,
+  .line-drawing {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
   .starter-meals,
   .dish-meals,
   .dessert-meals {

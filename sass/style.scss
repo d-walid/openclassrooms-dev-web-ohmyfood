@@ -4,6 +4,7 @@
 @import './libs/reset.scss';
 @import './libs/variables.scss';
 @import './libs/cards.scss';
+@import './libs/animations.scss';
 @import './libs/responsive.scss';
 
 h2,
@@ -418,6 +419,30 @@ p {
     width: 12%;
     padding-top: 3px;
     margin-bottom: 10px;
+  }
+
+  .starter-title,
+  .starters,
+  .starter-meals,
+  .line-drawing {
+    @include animation-fadein;
+    animation-duration: 1s;
+  }
+
+  .dish-title,
+  .dishes,
+  .dish-meals,
+  .line-drawing {
+    @include animation-fadein;
+    animation-duration: 3s;
+  }
+
+  .dessert-title,
+  .desserts,
+  .dessert-meals,
+  .line-drawing {
+    @include animation-fadein;
+    animation-duration: 5s;
   }
 
   .starter-meals,
