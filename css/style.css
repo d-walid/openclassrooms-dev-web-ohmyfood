@@ -20,10 +20,17 @@ h3 {
 }
 
 /* COLORS */
+html,
+body {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+}
+
 h2,
 h3,
 p {
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 
 ul,
@@ -154,10 +161,11 @@ p {
   padding-top: 8px;
   padding-bottom: 20px;
   padding-left: 10px;
+  height: 10%;
 }
 
 .footer-container h4 {
-  font-family: 'Shrikhand';
+  font-family: "Shrikhand";
   font-size: 20px;
   font-weight: 200;
 }
@@ -165,7 +173,7 @@ p {
 .footer-list li a {
   color: white;
   text-decoration: none;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   line-height: 25px;
 }
 
@@ -347,7 +355,7 @@ p {
   }
   .new-restaurant-button {
     text-align: center;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-weight: bold;
     position: absolute;
     right: 5%;
@@ -382,7 +390,7 @@ p {
     color: #9356dc;
   }
   .figcaption-title h5 {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-size: 16px;
   }
   /* FOOTER CUSTOM MOBILE */
@@ -415,7 +423,7 @@ p {
             justify-content: center;
   }
   .title-page-ohmyfood h1 {
-    font-family: 'Shrikhand';
+    font-family: "Shrikhand";
     padding-top: 5px;
   }
   .img-top-palette {
@@ -427,7 +435,7 @@ p {
     margin-bottom: -40px;
   }
   .menu-palette-du-gout h3 {
-    font-family: 'Shrikhand';
+    font-family: "Shrikhand";
     font-size: 22px;
     font-weight: 500;
     padding-top: 25px;
@@ -457,7 +465,7 @@ p {
   .starter-title,
   .dish-title,
   .dessert-title {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-weight: 300;
     font-size: 14px;
     padding-top: 20px;
@@ -538,7 +546,7 @@ p {
   .starter-meals h5,
   .dish-meals h5,
   .dessert-meals h5 {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     margin-bottom: 3px;
     font-size: 15px;
     font-weight: bold;
@@ -546,7 +554,7 @@ p {
   .starter-meals p,
   .dish-meals p,
   .dessert-meals p {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-size: 13px;
   }
   .details-price-meal {
@@ -607,7 +615,7 @@ p {
   }
   .new-restaurant-button {
     text-align: center;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-weight: bold;
     position: absolute;
     right: 5%;
@@ -698,31 +706,6 @@ p {
         -ms-flex-align: center;
             align-items: center;
   }
-  .menu-details-container {
-    height: 500px;
-  }
-  .three-menus {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  .menu-container {
-    width: 30%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
 }
 
 /* min-width: 1200px */
@@ -743,45 +726,5 @@ p {
     margin-left: 30px;
     margin-right: 10px;
   }
-  .restaurants-inline {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   /* DETAILS MENU CARD LARGE */
-  .three-menus {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  .menu-container {
-    width: 30%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .menu-details-container {
-    height: 500px;
-  }
 }
