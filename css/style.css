@@ -22,7 +22,6 @@ h3 {
 /* COLORS */
 html,
 body {
-  margin: 0 auto;
   height: 100%;
   width: 100%;
 }
@@ -161,7 +160,6 @@ p {
   padding-top: 8px;
   padding-bottom: 20px;
   padding-left: 10px;
-  height: 10%;
 }
 
 .footer-container h4 {
