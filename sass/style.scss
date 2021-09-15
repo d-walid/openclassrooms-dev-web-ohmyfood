@@ -460,6 +460,20 @@ p {
     background-color: white;
     padding: 10px;
     margin-bottom: 15px;
+    transition: padding-right 200ms ease-in-out;
+    cursor: pointer;
+    &:hover {
+      padding-right: 30px;
+    }
+    &:hover .validation-meal {
+      opacity: 1;
+    }
+    &:hover .fa-check-circle {
+      transform: rotate(360deg);
+    }
+    &:hover .details-price-meal p:nth-child(2) {
+      transform: translate(-50px);
+    }
   }
 
   .starter-meals h5,
@@ -501,23 +515,12 @@ p {
     margin-top: -46px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-  }
-
-  .fa-check-circle {
-    color: white;
-    font-size: 20px;
-  }
-
-  .starter-meals:hover {
-    padding-right: 80px;
-  }
-
-  .starter-meals:hover .validation-meal {
-    opacity: 1;
-  }
-
-  .starter-meals:hover .fa-check-circle {
-    transform: rotate(360deg);
+    transition: transform 500ms ease-in-out;
+    & .fa-check-circle {
+      color: white;
+      font-size: 20px;
+      transition: transform 800ms ease-in-out;
+    }
   }
 
   .menu-palette-du-gout button {

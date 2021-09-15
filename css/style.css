@@ -540,6 +540,31 @@ p {
     background-color: white;
     padding: 10px;
     margin-bottom: 15px;
+    -webkit-transition: padding-right 200ms ease-in-out;
+    transition: padding-right 200ms ease-in-out;
+    cursor: pointer;
+  }
+  .starter-meals:hover,
+  .dish-meals:hover,
+  .dessert-meals:hover {
+    padding-right: 30px;
+  }
+  .starter-meals:hover .validation-meal,
+  .dish-meals:hover .validation-meal,
+  .dessert-meals:hover .validation-meal {
+    opacity: 1;
+  }
+  .starter-meals:hover .fa-check-circle,
+  .dish-meals:hover .fa-check-circle,
+  .dessert-meals:hover .fa-check-circle {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  .starter-meals:hover .details-price-meal p:nth-child(2),
+  .dish-meals:hover .details-price-meal p:nth-child(2),
+  .dessert-meals:hover .details-price-meal p:nth-child(2) {
+    -webkit-transform: translate(-50px);
+            transform: translate(-50px);
   }
   .starter-meals h5,
   .dish-meals h5,
@@ -586,20 +611,18 @@ p {
     margin-top: -46px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    -webkit-transition: -webkit-transform 500ms ease-in-out;
+    transition: -webkit-transform 500ms ease-in-out;
+    transition: transform 500ms ease-in-out;
+    transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
   }
-  .fa-check-circle {
+  .validation-meal .fa-check-circle {
     color: white;
     font-size: 20px;
-  }
-  .starter-meals:hover {
-    padding-right: 80px;
-  }
-  .starter-meals:hover .validation-meal {
-    opacity: 1;
-  }
-  .starter-meals:hover .fa-check-circle {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transition: -webkit-transform 800ms ease-in-out;
+    transition: -webkit-transform 800ms ease-in-out;
+    transition: transform 800ms ease-in-out;
+    transition: transform 800ms ease-in-out, -webkit-transform 800ms ease-in-out;
   }
   .menu-palette-du-gout button {
     font-weight: 600;
