@@ -29,7 +29,7 @@ body {
 h2,
 h3,
 p {
-  font-family: "Roboto";
+  font-family: 'Roboto';
 }
 
 ul,
@@ -163,7 +163,7 @@ p {
 }
 
 .footer-container h4 {
-  font-family: "Shrikhand";
+  font-family: 'Shrikhand';
   font-size: 20px;
   font-weight: 200;
 }
@@ -171,7 +171,7 @@ p {
 .footer-list li a {
   color: white;
   text-decoration: none;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   line-height: 25px;
 }
 
@@ -353,7 +353,7 @@ p {
   }
   .new-restaurant-button {
     text-align: center;
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-weight: bold;
     position: absolute;
     right: 5%;
@@ -388,7 +388,7 @@ p {
     color: #9356dc;
   }
   .figcaption-title h5 {
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-size: 16px;
   }
   /* FOOTER CUSTOM MOBILE */
@@ -421,7 +421,7 @@ p {
             justify-content: center;
   }
   .title-page-ohmyfood h1 {
-    font-family: "Shrikhand";
+    font-family: 'Shrikhand';
     padding-top: 5px;
   }
   .img-top-palette {
@@ -433,7 +433,7 @@ p {
     margin-bottom: -40px;
   }
   .menu-palette-du-gout h3 {
-    font-family: "Shrikhand";
+    font-family: 'Shrikhand';
     font-size: 22px;
     font-weight: 500;
     padding-top: 25px;
@@ -463,7 +463,7 @@ p {
   .starter-title,
   .dish-title,
   .dessert-title {
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-weight: 300;
     font-size: 14px;
     padding-top: 20px;
@@ -544,7 +544,7 @@ p {
   .starter-meals h5,
   .dish-meals h5,
   .dessert-meals h5 {
-    font-family: "Roboto";
+    font-family: 'Roboto';
     margin-bottom: 3px;
     font-size: 15px;
     font-weight: bold;
@@ -552,7 +552,7 @@ p {
   .starter-meals p,
   .dish-meals p,
   .dessert-meals p {
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-size: 13px;
   }
   .details-price-meal {
@@ -565,6 +565,41 @@ p {
   }
   .details-price-meal p:nth-child(2) {
     font-weight: bold;
+  }
+  .validation-meal {
+    background-color: #99e2d0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 57px;
+    width: 57px;
+    padding: 20px;
+    position: absolute;
+    opacity: 0;
+    right: 10px;
+    margin-top: -46px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .fa-check-circle {
+    color: white;
+    font-size: 20px;
+  }
+  .starter-meals:hover {
+    padding-right: 80px;
+  }
+  .starter-meals:hover .validation-meal {
+    opacity: 1;
+  }
+  .starter-meals:hover .fa-check-circle {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
   .menu-palette-du-gout button {
     font-weight: 600;
@@ -613,7 +648,7 @@ p {
   }
   .new-restaurant-button {
     text-align: center;
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-weight: bold;
     position: absolute;
     right: 5%;
