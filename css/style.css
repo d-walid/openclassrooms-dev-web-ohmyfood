@@ -383,7 +383,7 @@ p {
     right: 25px;
     top: 5px;
   }
-  .heart:hover {
+  .fa-heart:hover {
     font-weight: bold;
     color: #9356dc;
   }
@@ -694,7 +694,7 @@ p {
   /* DETAILS MENU PALETTE DU GOUT SMALL MOBILE */
   .title-icon-palette i {
     font-size: 20px;
-    margin-left: 20%;
+    margin-left: 40%;
   }
 }
 
@@ -726,6 +726,10 @@ p {
             flex-direction: column;
     margin-left: auto;
     margin-right: auto;
+  }
+  .title-icon-palette i {
+    font-size: 20px;
+    margin-left: 60%;
   }
 }
 
@@ -793,4 +797,12 @@ p {
     margin-right: 10px;
   }
   /* DETAILS MENU CARD LARGE */
+  .title-icon-palette i {
+    font-size: 20px;
+    margin-left: 80%;
+  }
+  .fa-heart:hover {
+    font-weight: bold;
+    color: #9356dc;
+  }
 }
