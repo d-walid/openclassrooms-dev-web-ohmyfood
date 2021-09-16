@@ -384,7 +384,34 @@ p {
     margin-bottom: -40px;
   }
 
-  .menu-palette-du-gout h3 {
+  .img-top-note-enchantee {
+    background-image: url("../assets/restaurants/note-enchantee.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    margin-top: 5px;
+    margin-bottom: -40px;
+  }
+
+  .img-top-delice-des-sens {
+    background-image: url("../assets/restaurants/delice-des-sens.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    margin-top: 5px;
+    margin-bottom: -40px;
+  }
+
+  .img-top-a-la-francaise {
+    background-image: url("../assets/restaurants/a-la-francaise.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    margin-top: 5px;
+    margin-bottom: -40px;
+  }
+
+  .menu h3 {
     font-family: "Shrikhand";
     font-size: 22px;
     font-weight: 500;
@@ -397,16 +424,16 @@ p {
     border-top-right-radius: 30px;
     padding-left: 10px;
     padding-right: 10px;
-    height: 1000px;
+    height: 1100px;
     background-color: $lightgrey-color;
   }
 
-  .title-icon-palette {
+  .title-icon {
     display: flex;
     align-items: center;
   }
 
-  .title-icon-palette i {
+  .title-icon i {
     font-size: 20px;
     margin-left: 20%;
   }
@@ -531,7 +558,7 @@ p {
     }
   }
 
-  .menu-palette-du-gout button {
+  .menu button {
     font-weight: 600;
     border-radius: 30px;
     cursor: pointer;
@@ -554,7 +581,7 @@ p {
     align-items: center;
   }
 
-  .menu-palette-du-gout button:hover {
+  .menu button:hover {
     background-color: lighten($color: $primary-color, $amount: 15);
     background-blend-mode: lighten;
     box-shadow: 4px 4px 6px 0px #414141;
@@ -587,7 +614,7 @@ p {
   }
 
   /* DETAILS MENU PALETTE DU GOUT SMALL MOBILE */
-  .title-icon-palette i {
+  .title-icon i {
     font-size: 20px;
     margin-left: 40%;
   }
@@ -615,7 +642,7 @@ p {
     margin-right: auto;
   }
 
-  .title-icon-palette i {
+  .title-icon i {
     font-size: 20px;
     margin-left: 60%;
   }
@@ -661,7 +688,7 @@ p {
   }
 
   /* DETAILS MENU CARD LARGE */
-  .title-icon-palette i {
+  .title-icon i {
     font-size: 20px;
     margin-left: 80%;
   }
