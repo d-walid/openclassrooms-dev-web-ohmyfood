@@ -1,22 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Shrikhand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Shrikhand&display=swap");
 
-@import './libs/reset.scss';
-@import './libs/variables.scss';
-@import './libs/cards.scss';
-@import './libs/animations.scss';
-@import './libs/responsive.scss';
+@import "./libs/reset.scss";
+@import "./libs/variables.scss";
+@import "./libs/cards.scss";
+@import "./libs/animations.scss";
+@import "./libs/responsive.scss";
 
 html,
 body {
-  height: 100%;
+  margin: 0 auto;
   width: 100%;
 }
 
 h2,
 h3,
 p {
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 
 ul,
@@ -48,7 +48,7 @@ p {
 }
 
 .logo-ohmyfood {
-  background-image: url('../assets/logo/ohmyfood@2x.svg');
+  background-image: url("../assets/logo/ohmyfood@2x.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 40%;
@@ -128,7 +128,7 @@ p {
 }
 
 .footer-container h4 {
-  font-family: 'Shrikhand';
+  font-family: "Shrikhand";
   font-size: 20px;
   font-weight: 200;
 }
@@ -136,7 +136,7 @@ p {
 .footer-list li a {
   color: white;
   text-decoration: none;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   line-height: 25px;
 }
 
@@ -298,7 +298,7 @@ p {
 
   .new-restaurant-button {
     text-align: center;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-weight: bold;
     position: absolute;
     right: 5%;
@@ -334,7 +334,7 @@ p {
   }
 
   .figcaption-title h5 {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-size: 16px;
   }
 
@@ -371,12 +371,12 @@ p {
   }
 
   .title-page-ohmyfood h1 {
-    font-family: 'Shrikhand';
+    font-family: "Shrikhand";
     padding-top: 5px;
   }
 
   .img-top-palette {
-    background-image: url('../assets/restaurants/palette-du-gout.jpg');
+    background-image: url("../assets/restaurants/palette-du-gout.jpg");
     background-position: center;
     background-size: cover;
     height: 200px;
@@ -385,7 +385,7 @@ p {
   }
 
   .menu-palette-du-gout h3 {
-    font-family: 'Shrikhand';
+    font-family: "Shrikhand";
     font-size: 22px;
     font-weight: 500;
     padding-top: 25px;
@@ -416,7 +416,7 @@ p {
   .starter-title,
   .dish-title,
   .dessert-title {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-weight: 300;
     font-size: 14px;
     padding-top: 20px;
@@ -456,30 +456,38 @@ p {
   .starter-meals,
   .dish-meals,
   .dessert-meals {
+    display: block;
     border-radius: 15px;
     background-color: white;
     padding: 10px;
     margin-bottom: 15px;
     transition: padding-right 200ms ease-in-out;
     cursor: pointer;
+    overflow: hidden;
+    position: relative;
     &:hover {
-      padding-right: 30px;
+      padding-right: 70px;
     }
     &:hover .validation-meal {
       opacity: 1;
+      transform: translate(-80px);
     }
     &:hover .fa-check-circle {
       transform: rotate(360deg);
     }
-    &:hover .details-price-meal p:nth-child(2) {
-      transform: translate(-50px);
+    &:hover .details-price-meal p:nth-child(1),
+    h5 {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      padding-right: 10px;
     }
   }
 
   .starter-meals h5,
   .dish-meals h5,
   .dessert-meals h5 {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     margin-bottom: 3px;
     font-size: 15px;
     font-weight: bold;
@@ -488,7 +496,7 @@ p {
   .starter-meals p,
   .dish-meals p,
   .dessert-meals p {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-size: 13px;
   }
 
@@ -510,8 +518,8 @@ p {
     width: 57px;
     padding: 20px;
     position: absolute;
+    right: -80px;
     opacity: 0;
-    right: 10px;
     margin-top: -46px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -567,7 +575,7 @@ p {
 
   .new-restaurant-button {
     text-align: center;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-weight: bold;
     position: absolute;
     right: 5%;
