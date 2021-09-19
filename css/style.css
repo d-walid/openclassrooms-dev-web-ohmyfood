@@ -29,7 +29,7 @@ body {
 h2,
 h3,
 p {
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 
 ul,
@@ -163,7 +163,7 @@ p {
 }
 
 .footer-container h4 {
-  font-family: 'Shrikhand';
+  font-family: "Shrikhand";
   font-size: 20px;
   font-weight: 200;
 }
@@ -171,7 +171,7 @@ p {
 .footer-list li a {
   color: white;
   text-decoration: none;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   line-height: 25px;
 }
 
@@ -352,7 +352,7 @@ p {
   }
   .new-restaurant-button {
     text-align: center;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-weight: bold;
     width: 100px;
     float: right;
@@ -384,7 +384,7 @@ p {
     color: #9356dc;
   }
   .figcaption-title h5 {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-size: 16px;
   }
   /* FOOTER CUSTOM MOBILE */
@@ -417,7 +417,7 @@ p {
             justify-content: center;
   }
   .title-page-ohmyfood h1 {
-    font-family: 'Shrikhand';
+    font-family: "Shrikhand";
     padding-top: 5px;
   }
   .img-top-palette {
@@ -453,7 +453,7 @@ p {
     margin-bottom: -40px;
   }
   .menu h3 {
-    font-family: 'Shrikhand';
+    font-family: "Shrikhand";
     font-size: 22px;
     font-weight: 500;
     padding-top: 25px;
@@ -483,7 +483,7 @@ p {
   .starter-title,
   .dish-title,
   .dessert-title {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-weight: 300;
     font-size: 14px;
     padding-top: 20px;
@@ -599,7 +599,7 @@ p {
   .starter-meals h5,
   .dish-meals h5,
   .dessert-meals h5 {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     margin-bottom: 3px;
     font-size: 15px;
     font-weight: bold;
@@ -607,7 +607,7 @@ p {
   .starter-meals p,
   .dish-meals p,
   .dessert-meals p {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-size: 13px;
   }
   .details-price-meal {
@@ -689,28 +689,37 @@ p {
   }
   /* LOADER */
   .loader {
-    border: 5px solid #9356dc;
-    border-top: 5px solid #ff79da;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    -webkit-animation: spin 1s ease-in-out forwards;
-            animation: spin 1s ease-in-out forwards;
+    border: 10px solid #9356dc;
+    border-top: 10px solid #ff79da;
+    border-bottom: 10px solid #99e2d0;
+    border-left: 10px solid #f6f6f6;
+    border-radius: 30%;
+    width: 100px;
+    height: 100px;
     margin: auto;
     position: absolute;
+    -webkit-animation: spin 1s linear forwards;
+            animation: spin 1s linear forwards;
   }
   .loader-overlay {
-    position: absolute;
+    position: fixed;
     z-index: 9999;
-    top: 50%;
-    left: 50%;
-  }
-  .loader-wrap {
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    position: relative;
-    -webkit-animation: transition 3s ease-in-out forwards;
-            animation: transition 3s ease-in-out forwards;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-animation: transition 3s ease-in-out;
+            animation: transition 3s ease-in-out;
+    pointer-events: none;
   }
   @-webkit-keyframes spin {
     0% {
@@ -741,7 +750,7 @@ p {
       background-color: #e6e6e6;
     }
     100% {
-      background-color: 0, 0, 0, 1;
+      background-color: rgba(0, 0, 0, 0);
     }
   }
   @keyframes transition {
@@ -749,7 +758,7 @@ p {
       background-color: #e6e6e6;
     }
     100% {
-      background-color: 0, 0, 0, 1;
+      background-color: rgba(0, 0, 0, 0);
     }
   }
 }
@@ -766,7 +775,7 @@ p {
   }
   .new-restaurant-button {
     text-align: center;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-weight: bold;
     width: 100px;
     float: right;
