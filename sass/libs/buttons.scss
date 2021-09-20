@@ -1,0 +1,51 @@
+@mixin desc-localisation-button {
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  height: 40px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  border: none;
+  background: #ff79db;
+  background: -webkit-linear-gradient(bottom right, #af5fdb, #ff79db);
+  background: -moz-linear-gradient(bottom right, #af5fdb, #ff79db);
+  background: linear-gradient(to top left, #af5fdb, #ff79db);
+  -webkit-box-shadow: 4px 4px 6px 0px #aaa;
+  box-shadow: 4px 4px 6px 0px #aaa;
+  color: white;
+  &:hover {
+    background-color: lighten($color: $primary-color, $amount: 15);
+    background-blend-mode: lighten;
+    box-shadow: 4px 4px 6px 0px #414141;
+  }
+}
+
+@mixin new-restaurant-button {
+  text-align: center;
+  font-family: 'Roboto';
+  font-weight: bold;
+  width: 100px;
+  float: right;
+  margin: 10px;
+  border-radius: 2px;
+  background-color: $tertiary-color;
+  color: #2f8f78c7;
+  padding: 5px 10px;
+}
+
+@mixin order-menu-button {
+  @include desc-localisation-button();
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    background-color: lighten($color: $primary-color, $amount: 15);
+    background-blend-mode: lighten;
+    box-shadow: 4px 4px 6px 0px #414141;
+  }
+}

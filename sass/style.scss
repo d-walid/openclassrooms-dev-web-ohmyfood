@@ -1,11 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Shrikhand&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Shrikhand&display=swap');
 
-@import "./libs/reset.scss";
-@import "./libs/variables.scss";
-@import "./libs/cards.scss";
-@import "./libs/animations.scss";
-@import "./libs/responsive.scss";
+@import './libs/reset.scss';
+@import './libs/variables.scss';
+@import './libs/functions.scss';
+@import './libs/buttons.scss';
+@import './libs/cards.scss';
+@import './libs/animations.scss';
+@import './libs/responsive.scss';
 
 html,
 body {
@@ -16,7 +18,7 @@ body {
 h2,
 h3,
 p {
-  font-family: "Roboto";
+  font-family: 'Roboto';
 }
 
 ul,
@@ -48,7 +50,7 @@ p {
 }
 
 .logo-ohmyfood {
-  background-image: url("../assets/logo/ohmyfood@2x.svg");
+  background-image: url('../assets/logo/ohmyfood@2x.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 40%;
@@ -128,7 +130,7 @@ p {
 }
 
 .footer-container h4 {
-  font-family: "Shrikhand";
+  font-family: 'Shrikhand';
   font-size: 20px;
   font-weight: 200;
 }
@@ -136,7 +138,7 @@ p {
 .footer-list li a {
   color: white;
   text-decoration: none;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   line-height: 25px;
 }
 
@@ -209,28 +211,7 @@ p {
   }
 
   .desc-localisation button {
-    font-weight: 600;
-    border-radius: 30px;
-    cursor: pointer;
-    height: 40px;
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-    border: none;
-    background: #ff79db;
-    background: -webkit-linear-gradient(bottom right, #af5fdb, #ff79db);
-    background: -moz-linear-gradient(bottom right, #af5fdb, #ff79db);
-    background: linear-gradient(to top left, #af5fdb, #ff79db);
-    -webkit-box-shadow: 4px 4px 6px 0px #aaa;
-    box-shadow: 4px 4px 6px 0px #aaa;
-    color: white;
-  }
-
-  .desc-localisation button:hover {
-    background-color: lighten($color: $primary-color, $amount: 15);
-    background-blend-mode: lighten;
-    box-shadow: 4px 4px 6px 0px #414141;
+    @include desc-localisation-button;
   }
 
   /* FUNCTIONING CUSTOM MOBILE */
@@ -297,16 +278,7 @@ p {
   }
 
   .new-restaurant-button {
-    text-align: center;
-    font-family: "Roboto";
-    font-weight: bold;
-    width: 100px;
-    float: right;
-    margin: 10px;
-    border-radius: 2px;
-    background-color: $tertiary-color;
-    color: #2f8f78c7;
-    padding: 5px 10px;
+    @include new-restaurant-button;
   }
 
   figcaption {
@@ -331,7 +303,7 @@ p {
   }
 
   .figcaption-title h5 {
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-size: 16px;
   }
 
@@ -368,48 +340,28 @@ p {
   }
 
   .title-page-ohmyfood h1 {
-    font-family: "Shrikhand";
+    font-family: 'Shrikhand';
     padding-top: 5px;
   }
 
   .img-top-palette {
-    background-image: url("../assets/restaurants/palette-du-gout.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 200px;
-    margin-top: 5px;
-    margin-bottom: -40px;
+    @include img-top-palette;
   }
 
   .img-top-note-enchantee {
-    background-image: url("../assets/restaurants/note-enchantee.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 200px;
-    margin-top: 5px;
-    margin-bottom: -40px;
+    @include img-top-note-enchantee;
   }
 
   .img-top-delice-des-sens {
-    background-image: url("../assets/restaurants/delice-des-sens.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 200px;
-    margin-top: 5px;
-    margin-bottom: -40px;
+    @include img-top-delice-des-sens;
   }
 
   .img-top-a-la-francaise {
-    background-image: url("../assets/restaurants/a-la-francaise.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 200px;
-    margin-top: 5px;
-    margin-bottom: -40px;
+    @include img-top-a-la-francaise;
   }
 
   .menu h3 {
-    font-family: "Shrikhand";
+    font-family: 'Shrikhand';
     font-size: 22px;
     font-weight: 500;
     padding-top: 25px;
@@ -440,7 +392,7 @@ p {
   .starter-title,
   .dish-title,
   .dessert-title {
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-weight: 300;
     font-size: 14px;
     padding-top: 20px;
@@ -485,33 +437,13 @@ p {
     background-color: white;
     padding: 10px;
     margin-bottom: 15px;
-    transition: padding-right 200ms ease-in-out;
-    cursor: pointer;
-    overflow: hidden;
-    position: relative;
-    &:hover {
-      padding-right: 70px;
-    }
-    &:hover .validation-meal {
-      opacity: 1;
-      transform: translate(-80px);
-    }
-    &:hover .fa-check-circle {
-      transform: rotate(360deg);
-    }
-    &:hover .details-price-meal p:nth-child(1),
-    h5 {
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      padding-right: 10px;
-    }
+    @include validation-meal-details;
   }
 
   .starter-meals h5,
   .dish-meals h5,
   .dessert-meals h5 {
-    font-family: "Roboto";
+    font-family: 'Roboto';
     margin-bottom: 3px;
     font-size: 15px;
     font-weight: bold;
@@ -520,7 +452,7 @@ p {
   .starter-meals p,
   .dish-meals p,
   .dessert-meals p {
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-size: 13px;
   }
 
@@ -534,54 +466,11 @@ p {
   }
 
   .validation-meal {
-    background-color: $tertiary-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 57px;
-    width: 57px;
-    padding: 20px;
-    position: absolute;
-    right: -80px;
-    opacity: 0;
-    margin-top: -46px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    transition: transform 500ms ease-in-out;
-    & .fa-check-circle {
-      color: white;
-      font-size: 20px;
-      transition: transform 800ms ease-in-out;
-    }
+    @include validation-meal;
   }
 
   .menu button {
-    font-weight: 600;
-    border-radius: 30px;
-    cursor: pointer;
-    height: 40px;
-    width: 200px;
-    border: none;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    background: #ff79db;
-    background: -webkit-linear-gradient(bottom right, #af5fdb, #ff79db);
-    background: -moz-linear-gradient(bottom right, #af5fdb, #ff79db);
-    background: linear-gradient(to top left, #af5fdb, #ff79db);
-    -webkit-box-shadow: 4px 4px 6px 0px #aaa;
-    box-shadow: 4px 4px 6px 0px #aaa;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .menu button:hover {
-    background-color: lighten($color: $primary-color, $amount: 15);
-    background-blend-mode: lighten;
-    box-shadow: 4px 4px 6px 0px #414141;
+    @include order-menu-button;
   }
 
   /* LOADER */
@@ -595,6 +484,7 @@ p {
     height: 100px;
     margin: auto;
     position: absolute;
+    @include spinner;
     animation: spin 1s linear forwards;
   }
 
@@ -610,26 +500,7 @@ p {
     justify-content: center;
     animation: transition 3s ease-in-out;
     pointer-events: none;
-  }
-
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-      opacity: 1;
-    }
-    100% {
-      transform: rotate(360deg);
-      opacity: 0;
-    }
-  }
-
-  @keyframes transition {
-    0% {
-      background-color: rgb(230, 230, 230);
-    }
-    100% {
-      background-color: rgba(0, 0, 0, 0);
-    }
+    @include bg-transition;
   }
 }
 
@@ -643,19 +514,6 @@ p {
   .logo-ohmyfood {
     background-size: 125px;
     height: 100%;
-  }
-
-  .new-restaurant-button {
-    text-align: center;
-    font-family: "Roboto";
-    font-weight: bold;
-    width: 100px;
-    float: right;
-    margin: 10px;
-    border-radius: 2px;
-    background-color: $tertiary-color;
-    color: #2f8f78c7;
-    padding: 5px 10px;
   }
 
   /* DETAILS MENU PALETTE DU GOUT SMALL MOBILE */

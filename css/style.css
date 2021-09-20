@@ -29,7 +29,7 @@ body {
 h2,
 h3,
 p {
-  font-family: "Roboto";
+  font-family: 'Roboto';
 }
 
 ul,
@@ -163,7 +163,7 @@ p {
 }
 
 .footer-container h4 {
-  font-family: "Shrikhand";
+  font-family: 'Shrikhand';
   font-size: 20px;
   font-weight: 200;
 }
@@ -171,7 +171,7 @@ p {
 .footer-list li a {
   color: white;
   text-decoration: none;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   line-height: 25px;
 }
 
@@ -352,7 +352,7 @@ p {
   }
   .new-restaurant-button {
     text-align: center;
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-weight: bold;
     width: 100px;
     float: right;
@@ -384,7 +384,7 @@ p {
     color: #9356dc;
   }
   .figcaption-title h5 {
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-size: 16px;
   }
   /* FOOTER CUSTOM MOBILE */
@@ -417,7 +417,7 @@ p {
             justify-content: center;
   }
   .title-page-ohmyfood h1 {
-    font-family: "Shrikhand";
+    font-family: 'Shrikhand';
     padding-top: 5px;
   }
   .img-top-palette {
@@ -453,7 +453,7 @@ p {
     margin-bottom: -40px;
   }
   .menu h3 {
-    font-family: "Shrikhand";
+    font-family: 'Shrikhand';
     font-size: 22px;
     font-weight: 500;
     padding-top: 25px;
@@ -483,7 +483,7 @@ p {
   .starter-title,
   .dish-title,
   .dessert-title {
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-weight: 300;
     font-size: 14px;
     padding-top: 20px;
@@ -599,7 +599,7 @@ p {
   .starter-meals h5,
   .dish-meals h5,
   .dessert-meals h5 {
-    font-family: "Roboto";
+    font-family: 'Roboto';
     margin-bottom: 3px;
     font-size: 15px;
     font-weight: bold;
@@ -607,7 +607,7 @@ p {
   .starter-meals p,
   .dish-meals p,
   .dessert-meals p {
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-size: 13px;
   }
   .details-price-meal {
@@ -660,16 +660,18 @@ p {
     cursor: pointer;
     height: 40px;
     width: 200px;
-    border: none;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    border: none;
     background: #ff79db;
     background: -webkit-gradient(linear, right bottom, left top, from(#af5fdb), to(#ff79db));
     background: linear-gradient(to top left, #af5fdb, #ff79db);
     -webkit-box-shadow: 4px 4px 6px 0px #aaa;
     box-shadow: 4px 4px 6px 0px #aaa;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
     color: white;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -680,6 +682,12 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .menu button:hover {
+    background-color: #bc95e9;
+    background-blend-mode: lighten;
+    -webkit-box-shadow: 4px 4px 6px 0px #414141;
+            box-shadow: 4px 4px 6px 0px #414141;
   }
   .menu button:hover {
     background-color: #bc95e9;
@@ -700,26 +708,6 @@ p {
     position: absolute;
     -webkit-animation: spin 1s linear forwards;
             animation: spin 1s linear forwards;
-  }
-  .loader-overlay {
-    position: fixed;
-    z-index: 9999;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-animation: transition 3s ease-in-out;
-            animation: transition 3s ease-in-out;
-    pointer-events: none;
   }
   @-webkit-keyframes spin {
     0% {
@@ -744,6 +732,26 @@ p {
               transform: rotate(360deg);
       opacity: 0;
     }
+  }
+  .loader-overlay {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-animation: transition 3s ease-in-out;
+            animation: transition 3s ease-in-out;
+    pointer-events: none;
   }
   @-webkit-keyframes transition {
     0% {
@@ -772,18 +780,6 @@ p {
   .logo-ohmyfood {
     background-size: 125px;
     height: 100%;
-  }
-  .new-restaurant-button {
-    text-align: center;
-    font-family: "Roboto";
-    font-weight: bold;
-    width: 100px;
-    float: right;
-    margin: 10px;
-    border-radius: 2px;
-    background-color: #99e2d0;
-    color: #2f8f78c7;
-    padding: 5px 10px;
   }
   /* DETAILS MENU PALETTE DU GOUT SMALL MOBILE */
   .title-icon i {

@@ -20,3 +20,73 @@
     }
   }
 }
+
+@mixin spinner {
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(360deg);
+      opacity: 0;
+    }
+  }
+}
+
+@mixin bg-transition {
+  @keyframes transition {
+    0% {
+      background-color: rgb(230, 230, 230);
+    }
+    100% {
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+}
+
+@mixin validation-meal {
+  background-color: $tertiary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 57px;
+  width: 57px;
+  padding: 20px;
+  position: absolute;
+  right: -80px;
+  opacity: 0;
+  margin-top: -46px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transition: transform 500ms ease-in-out;
+  & .fa-check-circle {
+    color: white;
+    font-size: 20px;
+    transition: transform 800ms ease-in-out;
+  }
+}
+
+@mixin validation-meal-details {
+  transition: padding-right 200ms ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  &:hover {
+    padding-right: 70px;
+  }
+  &:hover .validation-meal {
+    opacity: 1;
+    transform: translate(-80px);
+  }
+  &:hover .fa-check-circle {
+    transform: rotate(360deg);
+  }
+  &:hover .details-price-meal p:nth-child(1),
+  h5 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-right: 10px;
+  }
+}

@@ -1,0 +1,35 @@
+@mixin img-top-palette {
+  background-image: url('../assets/restaurants/palette-du-gout.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  margin-top: 5px;
+  margin-bottom: -40px;
+}
+
+@mixin img-top-note-enchantee {
+  background-image: url('../assets/restaurants/note-enchantee.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  margin-top: 5px;
+  margin-bottom: -40px;
+}
+
+@mixin img-top-delice-des-sens {
+  background-image: url('../assets/restaurants/delice-des-sens.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  margin-top: 5px;
+  margin-bottom: -40px;
+}
+
+@mixin img-top-a-la-francaise {
+  background-image: url('../assets/restaurants/a-la-francaise.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  margin-top: 5px;
+  margin-bottom: -40px;
+}
