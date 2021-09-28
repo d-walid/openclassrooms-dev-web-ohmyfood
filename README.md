@@ -1,6 +1,6 @@
 # OpenClassrooms - Projet n°3 - Ohmyfood
 
-# Réalisation d'une maquette "Ohmyfood" en mobile first. Page d'accueil, pages de menus de restaurants ainsi que quelques animations étaient au programme.
+Réalisation d'une maquette "Ohmyfood" en mobile first. Page d'accueil, pages de menus de restaurants ainsi que quelques animations étaient au programme.
 
 ## Éléments fournis pour le projet
 
